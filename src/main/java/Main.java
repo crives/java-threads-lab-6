@@ -25,6 +25,8 @@ public class Main {
             PrimeLogger primeLogger = new PrimeLogger(num);
             executor.submit(primeLogger);
         }
+
+        executor.shutdown();
     }
 }
 
